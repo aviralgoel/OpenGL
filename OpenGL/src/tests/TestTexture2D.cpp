@@ -15,15 +15,15 @@ namespace test {
 		{	
 
 		float positions[] = {
-			-150.0,-150.0f, 0.0f, 1.0f,
-			150.0f, -150.0f, 1.0f, 0.0f,
-			150.0f, 150.0f, 1.0f, 1.0f,
-			-150.0f, 150.0f, 0.0f, 1.0f
+						-150.0f,-150.0f, 0.0f, 1.0f,
+			150.0f , -150.0f, 1.0f, 0.0f,
+			150.0f , 150.0f, 1.0f, 1.0f,
+			-150.0f, 150.0f, 0.0f, 1.0f,
 
-			- 150.0f+200,-150.0f+100, 0.0f, 1.0f,
-			150.0f+200, -150.0f+100, 1.0f, 0.0f,
-			150.0f+200, 150.0f+100, 1.0f, 1.0f,
-			-150.0f+200, 150.0f+100, 0.0f, 1.0f
+			- 150.0f+600,-150.0f, 0.0f, 1.0f,
+			150.0f+600, -150.0f, 1.0f, 0.0f,
+			150.0f+600, 150.0f, 1.0f, 1.0f,
+			-150.0f+600, 150.0f, 0.0f, 1.0f
 		};
 
 		unsigned int indices[] =
@@ -32,9 +32,6 @@ namespace test {
 			4,5,6,
 			6,7,4,
 		};
-
-		GLCall(glEnable(GL_BLEND)); // Enable transparency a.k.a Blending in OpenGL
-		GLCall(glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)); // final color = source alpa + (1-source alpha)
 		m_Shader = std::make_unique<Shader>("res/shaders/Basic.shader");
 		m_VertexBuffer = std::make_unique<VertexBuffer>(positions, 2*4*4*sizeof(float));
 		m_VAO = std::make_unique<VertexArray>();
