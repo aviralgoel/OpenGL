@@ -1,5 +1,6 @@
 # Learning OpenGL
 ![Alt Text](https://i.imgur.com/I1t5KfL.gif)
+
 I followed The Cherno's OpenGL tutorial series on YouTube to learn OpenGL for C++. This repository has code which taught me about
 - Basics of OpenGL
 - Vertex buffer, Index Buffer, Buffer layouts and Vertex Arrays
