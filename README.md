@@ -1,5 +1,7 @@
 # Learning OpenGL
 ![Alt Text](https://i.imgur.com/I1t5KfL.gif)
+![demo_openGL](https://user-images.githubusercontent.com/5007364/206810576-f193c93b-47e7-4d1a-8a3b-4c9ae14c5ec7.gif)
+
 
 I followed The Cherno's OpenGL tutorial series on YouTube to learn OpenGL for C++. This repository has code which taught me about
 - Basics of OpenGL
